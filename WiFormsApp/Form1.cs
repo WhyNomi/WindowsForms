@@ -24,7 +24,9 @@ namespace WiFormsApp
 
         private void main_timer_Tick(object sender, EventArgs e)
         {
-
+            this.lb_time.Text = DateTime.Now.ToString();
         }
+
+    
     }
 }
