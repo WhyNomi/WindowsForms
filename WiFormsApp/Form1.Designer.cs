@@ -64,7 +64,7 @@
             this.cb_show_date.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.cb_show_date.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cb_show_date.ForeColor = System.Drawing.Color.Yellow;
-            this.cb_show_date.Location = new System.Drawing.Point(419, 189);
+            this.cb_show_date.Location = new System.Drawing.Point(418, 175);
             this.cb_show_date.Name = "cb_show_date";
             this.cb_show_date.Size = new System.Drawing.Size(165, 46);
             this.cb_show_date.TabIndex = 2;
@@ -72,6 +72,8 @@
             this.cb_show_date.UseVisualStyleBackColor = true;
             this.cb_show_date.UseWaitCursor = true;
             this.cb_show_date.CheckedChanged += new System.EventHandler(this.cb_show_date_CheckedChanged);
+            this.cb_show_date.MouseLeave += new System.EventHandler(this.cb_show_date_MouseLeave);
+            this.cb_show_date.MouseHover += new System.EventHandler(this.cb_show_date_MouseHover);
             // 
             // lb_date
             // 
