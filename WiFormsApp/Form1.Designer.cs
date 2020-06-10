@@ -108,6 +108,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TIME&DATA";
             this.ResumeLayout(false);
             this.PerformLayout();
