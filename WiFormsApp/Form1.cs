@@ -36,13 +36,14 @@ namespace WiFormsApp
             
             // font_default.Bold = true;
             this.cb_show_date.Font = new Font(font_default, FontStyle.Bold);
-            this.cb_show_date.ForeColor = Color.Red;
+            this.cb_show_date.ForeColor = Color.Yellow;
         }
 
         private void cb_show_date_MouseLeave(object sender, EventArgs e)
         {
-            this.cb_show_date.Font = new Font(font_default, FontStyle.Regular);
-            this.cb_show_date.ForeColor = Color.Yellow;
+            this.cb_show_date.Font = new Font(font_default, FontStyle.Bold);
+            this.cb_show_date.ForeColor = Color.Ivory;
         }
+
     }
 }

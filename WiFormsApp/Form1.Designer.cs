@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lb_time = new System.Windows.Forms.Label();
             this.main_timer = new System.Windows.Forms.Timer(this.components);
             this.second_timer = new System.Windows.Forms.Timer(this.components);
@@ -39,11 +40,12 @@
             // lb_time
             // 
             this.lb_time.AutoSize = true;
-            this.lb_time.Font = new System.Drawing.Font("Segoe Print", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_time.ForeColor = System.Drawing.Color.Yellow;
-            this.lb_time.Location = new System.Drawing.Point(50, 24);
+            this.lb_time.BackColor = System.Drawing.SystemColors.GrayText;
+            this.lb_time.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_time.ForeColor = System.Drawing.Color.Ivory;
+            this.lb_time.Location = new System.Drawing.Point(291, 46);
             this.lb_time.Name = "lb_time";
-            this.lb_time.Size = new System.Drawing.Size(113, 62);
+            this.lb_time.Size = new System.Drawing.Size(94, 45);
             this.lb_time.TabIndex = 1;
             this.lb_time.Text = "Time";
             // 
@@ -61,16 +63,15 @@
             // cb_show_date
             // 
             this.cb_show_date.AutoSize = true;
-            this.cb_show_date.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.cb_show_date.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cb_show_date.ForeColor = System.Drawing.Color.Yellow;
-            this.cb_show_date.Location = new System.Drawing.Point(418, 175);
+            this.cb_show_date.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cb_show_date.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cb_show_date.ForeColor = System.Drawing.Color.Ivory;
+            this.cb_show_date.Location = new System.Drawing.Point(474, 203);
             this.cb_show_date.Name = "cb_show_date";
-            this.cb_show_date.Size = new System.Drawing.Size(165, 46);
+            this.cb_show_date.Size = new System.Drawing.Size(179, 44);
             this.cb_show_date.TabIndex = 2;
             this.cb_show_date.Text = "Show date";
             this.cb_show_date.UseVisualStyleBackColor = true;
-            this.cb_show_date.UseWaitCursor = true;
             this.cb_show_date.CheckedChanged += new System.EventHandler(this.cb_show_date_CheckedChanged);
             this.cb_show_date.MouseLeave += new System.EventHandler(this.cb_show_date_MouseLeave);
             this.cb_show_date.MouseHover += new System.EventHandler(this.cb_show_date_MouseHover);
@@ -78,11 +79,11 @@
             // lb_date
             // 
             this.lb_date.AutoSize = true;
-            this.lb_date.Font = new System.Drawing.Font("Segoe Print", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_date.ForeColor = System.Drawing.Color.Yellow;
-            this.lb_date.Location = new System.Drawing.Point(54, 101);
+            this.lb_date.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_date.ForeColor = System.Drawing.Color.Ivory;
+            this.lb_date.Location = new System.Drawing.Point(291, 109);
             this.lb_date.Name = "lb_date";
-            this.lb_date.Size = new System.Drawing.Size(109, 62);
+            this.lb_date.Size = new System.Drawing.Size(90, 45);
             this.lb_date.TabIndex = 4;
             this.lb_date.Text = "Date";
             this.lb_date.Visible = false;
@@ -91,15 +92,23 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(596, 247);
+            this.BackColor = System.Drawing.SystemColors.GrayText;
+            this.BackgroundImage = global::WiFormsApp.Properties.Resources.chemistry__2_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(665, 259);
             this.Controls.Add(this.lb_date);
             this.Controls.Add(this.cb_show_date);
             this.Controls.Add(this.lb_time);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("MingLiU-ExtB", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "POUNB Form";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Text = "TIME&DATA";
             this.ResumeLayout(false);
             this.PerformLayout();
 
