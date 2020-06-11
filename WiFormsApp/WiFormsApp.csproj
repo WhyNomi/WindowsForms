@@ -81,6 +81,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\flagicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hideicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\chemistry %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

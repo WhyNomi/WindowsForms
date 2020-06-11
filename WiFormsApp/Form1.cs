@@ -45,6 +45,31 @@ namespace WiFormsApp
             this.cb_show_date.ForeColor = Color.Ivory;
         }
 
+        ////////////////////////////MENU////////////////////////////////////
 
+        private void alwaysOnTopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            alwaysOnTopToolStripMenuItem.Checked = this.TopMost = !TopMost;
+            //this.TopMost = this.TopMost ? false : true;
+        }
+
+        private void showToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void hideToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+
+        ////////////////////////////MENU////////////////////////////////////
     }
 }
