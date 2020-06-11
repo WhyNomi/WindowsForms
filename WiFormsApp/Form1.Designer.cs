@@ -124,6 +124,8 @@
             // 
             // alwaysOnTopToolStripMenuItem
             // 
+            this.alwaysOnTopToolStripMenuItem.Checked = true;
+            this.alwaysOnTopToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.alwaysOnTopToolStripMenuItem.Name = "alwaysOnTopToolStripMenuItem";
             this.alwaysOnTopToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.alwaysOnTopToolStripMenuItem.Text = "Always on top";
@@ -131,6 +133,7 @@
             // 
             // showToolStripMenuItem
             // 
+            this.showToolStripMenuItem.Image = global::WiFormsApp.Properties.Resources.showicon;
             this.showToolStripMenuItem.Name = "showToolStripMenuItem";
             this.showToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.showToolStripMenuItem.Text = "Show";
@@ -138,6 +141,7 @@
             // 
             // hideToolStripMenuItem
             // 
+            this.hideToolStripMenuItem.Image = global::WiFormsApp.Properties.Resources.hideicon;
             this.hideToolStripMenuItem.Name = "hideToolStripMenuItem";
             this.hideToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.hideToolStripMenuItem.Text = "Hide";
@@ -145,6 +149,7 @@
             // 
             // closeToolStripMenuItem
             // 
+            this.closeToolStripMenuItem.Image = global::WiFormsApp.Properties.Resources.closeicon;
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.closeToolStripMenuItem.Text = "Close";
@@ -155,7 +160,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.BackgroundImage = global::WiFormsApp.Properties.Resources.chemistry__2_;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(673, 262);
             this.Controls.Add(this.Welcome);
