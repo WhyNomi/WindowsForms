@@ -41,6 +41,7 @@
             this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuSystemTray.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,12 +115,13 @@
             // contextMenuSystemTray
             // 
             this.contextMenuSystemTray.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.settingsToolStripMenuItem,
             this.alwaysOnTopToolStripMenuItem,
             this.showToolStripMenuItem,
             this.hideToolStripMenuItem,
             this.closeToolStripMenuItem});
             this.contextMenuSystemTray.Name = "contextMenuSystemTray";
-            this.contextMenuSystemTray.Size = new System.Drawing.Size(150, 92);
+            this.contextMenuSystemTray.Size = new System.Drawing.Size(181, 136);
             this.contextMenuSystemTray.Text = "Text of menu";
             // 
             // alwaysOnTopToolStripMenuItem
@@ -127,7 +129,7 @@
             this.alwaysOnTopToolStripMenuItem.Checked = true;
             this.alwaysOnTopToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.alwaysOnTopToolStripMenuItem.Name = "alwaysOnTopToolStripMenuItem";
-            this.alwaysOnTopToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.alwaysOnTopToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alwaysOnTopToolStripMenuItem.Text = "Always on top";
             this.alwaysOnTopToolStripMenuItem.Click += new System.EventHandler(this.alwaysOnTopToolStripMenuItem_Click);
             // 
@@ -135,7 +137,7 @@
             // 
             this.showToolStripMenuItem.Image = global::WiFormsApp.Properties.Resources.showicon;
             this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.showToolStripMenuItem.Text = "Show";
             this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
             // 
@@ -143,7 +145,7 @@
             // 
             this.hideToolStripMenuItem.Image = global::WiFormsApp.Properties.Resources.hideicon;
             this.hideToolStripMenuItem.Name = "hideToolStripMenuItem";
-            this.hideToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.hideToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hideToolStripMenuItem.Text = "Hide";
             this.hideToolStripMenuItem.Click += new System.EventHandler(this.hideToolStripMenuItem_Click);
             // 
@@ -151,9 +153,16 @@
             // 
             this.closeToolStripMenuItem.Image = global::WiFormsApp.Properties.Resources.closeicon;
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -201,6 +210,15 @@
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hideToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+
+        public System.Windows.Forms.ToolStripMenuItem AlWaysOnTop
+        {
+            get
+            {
+                return alwaysOnTopToolStripMenuItem;
+            }
+        }
     }
 }
 

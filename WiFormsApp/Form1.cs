@@ -68,6 +68,12 @@ namespace WiFormsApp
             this.Close();
         }
 
+        private void settingsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MyClockSettings mcs = new MyClockSettings();
+            mcs.Show();
+        }
+
         ////////////////////////////MENU////////////////////////////////////
     }
 }
