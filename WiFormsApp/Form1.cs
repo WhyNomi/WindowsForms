@@ -45,5 +45,6 @@ namespace WiFormsApp
             this.cb_show_date.ForeColor = Color.Ivory;
         }
 
+
     }
 }
