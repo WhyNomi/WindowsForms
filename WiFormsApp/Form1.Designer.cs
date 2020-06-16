@@ -192,6 +192,7 @@
             this.Text = "TIME&DATA";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.SystemColors.GrayText;
+       
             this.contextMenuSystemTray.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

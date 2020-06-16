@@ -40,8 +40,11 @@ namespace WiFormsApp
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            if(cb_ClockTopMost.Checked)cb_ClockTopMost_Click(sender, e);
-            if(cb_ShowData.Checked)cb_ShowData_Click(sender, e);
+            //if(cb_ClockTopMost.Checked)cb_ClockTopMost_Click(sender, e);
+
+            //if(cb_ShowData.Checked)cb_ShowData_Click(sender, e);
+           parent.TopMost = parent.AlwaysOnTopToolStripMenuItem.Checked = this.cb_ClockTopMost.Checked ? true : false;
+            parent.Lb_date.Visible = this.cb_ShowData.Checked ? true : false;
             this.Close();
         }
     }
