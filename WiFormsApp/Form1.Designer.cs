@@ -37,21 +37,21 @@
             this.Welcome = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuSystemTray = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alwaysOnTopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuSystemTray.SuspendLayout();
             this.SuspendLayout();
             // 
             // lb_time
             // 
             this.lb_time.AutoSize = true;
-            this.lb_time.BackColor = System.Drawing.Color.Transparent;
+            this.lb_time.BackColor = System.Drawing.SystemColors.GrayText;
             this.lb_time.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lb_time.ForeColor = System.Drawing.Color.Ivory;
-            this.lb_time.Location = new System.Drawing.Point(391, 77);
+            this.lb_time.Location = new System.Drawing.Point(354, 70);
             this.lb_time.Name = "lb_time";
             this.lb_time.Size = new System.Drawing.Size(94, 45);
             this.lb_time.TabIndex = 1;
@@ -68,11 +68,11 @@
             this.cb_show_date.AutoSize = true;
             this.cb_show_date.BackColor = System.Drawing.Color.Transparent;
             this.cb_show_date.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb_show_date.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cb_show_date.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cb_show_date.ForeColor = System.Drawing.Color.Ivory;
-            this.cb_show_date.Location = new System.Drawing.Point(288, 206);
+            this.cb_show_date.Location = new System.Drawing.Point(333, 218);
             this.cb_show_date.Name = "cb_show_date";
-            this.cb_show_date.Size = new System.Drawing.Size(238, 44);
+            this.cb_show_date.Size = new System.Drawing.Size(225, 41);
             this.cb_show_date.TabIndex = 2;
             this.cb_show_date.Text = "Показать дату";
             this.cb_show_date.UseVisualStyleBackColor = false;
@@ -86,7 +86,7 @@
             this.lb_date.BackColor = System.Drawing.Color.Transparent;
             this.lb_date.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lb_date.ForeColor = System.Drawing.Color.Ivory;
-            this.lb_date.Location = new System.Drawing.Point(280, 148);
+            this.lb_date.Location = new System.Drawing.Point(273, 136);
             this.lb_date.Name = "lb_date";
             this.lb_date.Size = new System.Drawing.Size(90, 45);
             this.lb_date.TabIndex = 4;
@@ -99,7 +99,7 @@
             this.Welcome.BackColor = System.Drawing.Color.Transparent;
             this.Welcome.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Welcome.ForeColor = System.Drawing.Color.Ivory;
-            this.Welcome.Location = new System.Drawing.Point(280, 9);
+            this.Welcome.Location = new System.Drawing.Point(289, 9);
             this.Welcome.Name = "Welcome";
             this.Welcome.Size = new System.Drawing.Size(360, 47);
             this.Welcome.TabIndex = 5;
@@ -111,6 +111,7 @@
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "My Clock";
             this.notifyIcon1.Visible = true;
+            this.notifyIcon1.DoubleClick += new System.EventHandler(this.settingsToolStripMenuItem1_Click);
             // 
             // contextMenuSystemTray
             // 
@@ -121,15 +122,22 @@
             this.hideToolStripMenuItem,
             this.closeToolStripMenuItem});
             this.contextMenuSystemTray.Name = "contextMenuSystemTray";
-            this.contextMenuSystemTray.Size = new System.Drawing.Size(181, 136);
+            this.contextMenuSystemTray.Size = new System.Drawing.Size(150, 114);
             this.contextMenuSystemTray.Text = "Text of menu";
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem1_Click);
             // 
             // alwaysOnTopToolStripMenuItem
             // 
             this.alwaysOnTopToolStripMenuItem.Checked = true;
             this.alwaysOnTopToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.alwaysOnTopToolStripMenuItem.Name = "alwaysOnTopToolStripMenuItem";
-            this.alwaysOnTopToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alwaysOnTopToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.alwaysOnTopToolStripMenuItem.Text = "Always on top";
             this.alwaysOnTopToolStripMenuItem.Click += new System.EventHandler(this.alwaysOnTopToolStripMenuItem_Click);
             // 
@@ -137,7 +145,7 @@
             // 
             this.showToolStripMenuItem.Image = global::WiFormsApp.Properties.Resources.showicon;
             this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.showToolStripMenuItem.Text = "Show";
             this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
             // 
@@ -145,7 +153,7 @@
             // 
             this.hideToolStripMenuItem.Image = global::WiFormsApp.Properties.Resources.hideicon;
             this.hideToolStripMenuItem.Name = "hideToolStripMenuItem";
-            this.hideToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hideToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.hideToolStripMenuItem.Text = "Hide";
             this.hideToolStripMenuItem.Click += new System.EventHandler(this.hideToolStripMenuItem_Click);
             // 
@@ -153,23 +161,16 @@
             // 
             this.closeToolStripMenuItem.Image = global::WiFormsApp.Properties.Resources.closeicon;
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
-            // 
-            // settingsToolStripMenuItem
-            // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.settingsToolStripMenuItem.Text = "Settings";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::WiFormsApp.Properties.Resources.chemistry__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(673, 262);
             this.Controls.Add(this.Welcome);

@@ -30,7 +30,7 @@
         {
             this.cb_ClockTopMost = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAccept = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.cb_ShowData = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
@@ -46,7 +46,6 @@
             this.cb_ClockTopMost.TabIndex = 0;
             this.cb_ClockTopMost.Text = "Поверх всех окон";
             this.cb_ClockTopMost.UseVisualStyleBackColor = true;
-            this.cb_ClockTopMost.Click += new System.EventHandler(this.cb_ClockTopMost_Click);
             // 
             // label1
             // 
@@ -59,20 +58,21 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Настройки";
             // 
-            // button1
+            // btnAccept
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(322, 262);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 31);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Применить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAccept.Location = new System.Drawing.Point(332, 262);
+            this.btnAccept.Name = "btnAccept";
+            this.btnAccept.Size = new System.Drawing.Size(104, 31);
+            this.btnAccept.TabIndex = 2;
+            this.btnAccept.Text = "Применить";
+            this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnCancel.Location = new System.Drawing.Point(448, 263);
+            this.btnCancel.Location = new System.Drawing.Point(459, 262);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(103, 31);
             this.btnCancel.TabIndex = 3;
@@ -100,7 +100,7 @@
             this.ClientSize = new System.Drawing.Size(592, 305);
             this.Controls.Add(this.cb_ShowData);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_ClockTopMost);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -115,7 +115,7 @@
 
         private System.Windows.Forms.CheckBox cb_ClockTopMost;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAccept;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.CheckBox cb_ShowData;
     }

@@ -13,10 +13,31 @@ namespace WiFormsApp
     public partial class Form1 : Form
     {
         Font font_default;
+        public System.Windows.Forms.ToolStripMenuItem AlwaysOnTopToolStripMenuItem
+        { 
+            get
+            {
+             return alwaysOnTopToolStripMenuItem;
+            }
+        }
+
+        public Label Lb_date
+        {
+            get
+            {
+                return lb_date;
+            }
+            set
+            {
+                lb_date = value;
+            }
+        }
+
         public Form1()
         {
             InitializeComponent();
             font_default = cb_show_date.Font;
+          
         }
 
         private void main_timer_Tick(object sender, EventArgs e)
@@ -47,7 +68,7 @@ namespace WiFormsApp
 
         ////////////////////////////MENU////////////////////////////////////
 
-        private void alwaysOnTopToolStripMenuItem_Click(object sender, EventArgs e)
+        public void alwaysOnTopToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
             alwaysOnTopToolStripMenuItem.Checked = this.TopMost = !TopMost;
@@ -70,7 +91,7 @@ namespace WiFormsApp
 
         private void settingsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MyClockSettings mcs = new MyClockSettings();
+            MyClockSettings mcs = new MyClockSettings(this);
             mcs.Show();
         }
 
