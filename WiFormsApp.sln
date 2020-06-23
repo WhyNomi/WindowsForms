@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiFormsApp", "WiFormsApp\Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShutdownTimers", "ShutdownTimers\ShutdownTimers.csproj", "{8058B548-36A6-4B48-8333-6892A92DD38F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateClc", "DateClc\DateClc.csproj", "{D951288F-309B-48CC-B0E7-AFAD0C4BE608}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8058B548-36A6-4B48-8333-6892A92DD38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8058B548-36A6-4B48-8333-6892A92DD38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8058B548-36A6-4B48-8333-6892A92DD38F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D951288F-309B-48CC-B0E7-AFAD0C4BE608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D951288F-309B-48CC-B0E7-AFAD0C4BE608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D951288F-309B-48CC-B0E7-AFAD0C4BE608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D951288F-309B-48CC-B0E7-AFAD0C4BE608}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
